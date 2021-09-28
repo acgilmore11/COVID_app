@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDFD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/rateReading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heart Rate:"
+        app:layout_constraintEnd_toEndOf="@+id/hrButton"
+        app:layout_constraintStart_toStartOf="@+id/hrButton"
+        app:layout_constraintTop_toBottomOf="@+id/hrButton" />
+
+    <Button
+        android:id="@+id/hrButton"
+        android:layout_width="338dp"
+        android:layout_height="65dp"
+        android:text="Measure Heart Rate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <Button
+        android:id="@+id/sensorButton"
+        android:layout_width="338dp"
+        android:layout_height="65dp"
+        android:text="Measure Respiratory Rate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COVID-19 Data Monitor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/symptoms"
+        android:layout_width="257dp"
+        android:layout_height="57dp"
+        android:text="Enter Symptoms"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314" />
+
+    <TextView
+        android:id="@+id/rateReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Respiratory rate:"
+        app:layout_constraintEnd_toEndOf="@+id/sensorButton"
+        app:layout_constraintStart_toStartOf="@+id/sensorButton"
+        app:layout_constraintTop_toBottomOf="@+id/sensorButton" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="176dp"
+        android:layout_height="136dp"
+        app:layout_constraintBottom_toTopOf="@+id/symptoms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <Button
+        android:id="@+id/uploadRates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Respiratory/Heart Rate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateReading2"
+        app:layout_constraintVertical_bias="0.323" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

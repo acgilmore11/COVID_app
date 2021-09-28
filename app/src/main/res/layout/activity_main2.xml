@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SymptomLog">
+
+    <ImageButton
+        android:id="@+id/clickedStar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:clickable="false"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/clickedStar4"
+        app:layout_constraintTop_toTopOf="@+id/clickedStar4"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageButton
+        android:id="@+id/clickedStar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:clickable="false"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/clickedStar3"
+        app:layout_constraintTop_toTopOf="@+id/clickedStar3"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageButton
+        android:id="@+id/clickedStar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:clickable="false"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/clickedStar2"
+        app:layout_constraintTop_toTopOf="@+id/clickedStar2"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageButton
+        android:id="@+id/clickedStar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:clickable="false"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/clickedStar1"
+        app:layout_constraintTop_toTopOf="@+id/clickedStar1"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageButton
+        android:id="@+id/unClickedStar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/unClickedStar4"
+        app:layout_constraintTop_toTopOf="@+id/unClickedStar4"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
+
+    <ImageButton
+        android:id="@+id/unClickedStar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/unClickedStar3"
+        app:layout_constraintTop_toTopOf="@+id/unClickedStar3"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
+
+    <ImageButton
+        android:id="@+id/unClickedStar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/unClickedStar2"
+        app:layout_constraintTop_toTopOf="@+id/unClickedStar2"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
+
+    <ImageButton
+        android:id="@+id/unClickedStar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/unClickedStar1"
+        app:layout_constraintTop_toTopOf="@+id/unClickedStar1"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
+
+    <Spinner
+        android:id="@+id/symptomspinner"
+        android:layout_width="399dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.191"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Symptoms"
+        app:layout_constraintBottom_toTopOf="@+id/symptomspinner"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <TextView
+        android:id="@+id/currSymptom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Severity of symptom: "
+        app:layout_constraintTop_toBottomOf="@+id/symptomspinner"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageButton
+        android:id="@+id/unClickedStar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/currSymptom"
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        tools:layout_editor_absoluteX="56dp" />
+
+    <ImageButton
+        android:id="@+id/clickedStar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:clickable="false"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@+id/unClickedStar1"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:layout_editor_absoluteX="56dp" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Symptoms"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clickedStar3" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

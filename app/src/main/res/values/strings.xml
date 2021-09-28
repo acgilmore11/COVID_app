@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">COVID App</string>
+
+    <string-array name = "symptoms">
+        <item> Nausea </item>
+        <item> Headache </item>
+        <item> Diarrhea </item>
+        <item> Sore Throat </item>
+        <item> Fever </item>
+        <item> Muscle Ache </item>
+        <item> Loss of Smell/Taste </item>
+        <item> Cough </item>
+        <item> Shortness of Breath </item>
+        <item> Feeling Tired </item>
+    </string-array>
+
+</resources>
